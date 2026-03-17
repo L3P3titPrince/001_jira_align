@@ -1,0 +1,9 @@
+source,target,value,type
+Ideas,Planned,40,flow
+Ideas,Shelved,10,dropped
+Planned,Dependencies,30,flow
+Planned,Backlog,10,backlog
+Dependencies,EPIC,20,flow
+Dependencies,Backlog,10,backlog
+EPIC,Completed,15,flow
+EPIC,Backlog,5,backlog

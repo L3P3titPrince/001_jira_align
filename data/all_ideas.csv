@@ -1,0 +1,100 @@
+idea_id,idea_title,idea_status,owner_name,requester_organization
+3,"Add ERLANGC, AGENTS, SLA functions in Polaris",New,John Pitstick,Polaris
+4,Streaming Export between Salesforce and Sales Forecasting Application [ADO],New,Jen Wang,App_Enhancements
+5,Standardization of naming convention across applications,New,Jen Wang,App_Enhancements
+6,Scripting Engine,New,Jen Wang,App_Enhancements
+7,Managing selective access for end users with out requiring a WSA to do manual updates in the back end model,New,John Pitstick,Modeling
+8,Support for Time-aware hierarchies,New,John Pitstick,Modeling
+9,"As a builder, I must be able to configure the Model Calendar in a model",New,Trent Beilke,PAF
+10,Ability to configure multiple modules with the same hierarchy but separate lists.,New,Trent Beilke,PAF
+11,Ability to map on Name or Code for standard lists in ADO>Model,Completed,Frankie Wolf,ADO
+12,SFDC Connector with Writeback and Streaming (Replacement of current connector),Open,Carolina Aguirre,ADO
+13,Data Spaces Enhancements (interconnection and content movement) - Needed by All Apps,Open,Carolina Aguirre,ADO
+14,"Bulk repointing of model links, including associated workflow templates - Needed by All Apps",Open,Carolina Aguirre,ADO
+15,Validations + Data Cleaning & Profiling - Needed by All Apps,Open,Carolina Aguirre,ADO
+16,User inputs - Needed by All Apps,Open,Carolina Aguirre,ADO
+17,Grouping of links - Needed by All Apps,Open,Carolina Aguirre,ADO
+18,Performance for model links/source - Needed by All Apps,Open,Carolina Aguirre,ADO
+19,ALM / 'repointing' for workflow,New,Carolina Aguirre,ADO
+20,Lifecycle management + associated auditing/change control - Needed by All Apps,Open,Carolina Aguirre,ADO
+21,Improved Error Handling - Needed by All Apps,Open,Carolina Aguirre,ADO
+22,Usability Improvements - Needed by All Apps,Open,Carolina Aguirre,ADO
+23,Smarter Data Type Transformation - Needed by All Apps,Open,Carolina Aguirre,ADO
+24,Bulk deletion of ADO content - Needed by All Apps,Open,Carolina Aguirre,ADO
+25,Master data management - Needed by All Apps,New,Frankie Wolf,ADO
+26,Agents: Write back capability,New,Carolina Aguirre,AI
+27,AI navigation,New,Carolina Aguirre,AI
+28,Other: Analytics / scripting engine,New,Carolina Aguirre,AI
+29,Forecaster: Coefficients,New,Carolina Aguirre,AI
+30,Analyst: App Specific Context,Planned,Carolina Aguirre,AI
+31,Other: Segmentation/Clustering Algorithms,Open,Lindsay DiPietro,AI
+35,Three-way solve,New,Carolina Aguirre,Modeling
+36,Statistical calculation functions,New,Carolina Aguirre,Polaris
+37,Stochastic modelling,New,Carolina Aguirre,Modeling
+39,Versions as a list format,Open,Frankie Wolf,Modeling
+41,User-input override on calculated cell (Merge w/ 3 way solve),New,Frankie Wolf,Modeling
+42,Dynamic bulk copy (bug?),Open,Frankie Wolf,Modeling
+43,Lookup Reverse Mapping / Performance,Open,Carolina Aguirre,Polaris
+44,Optimizer on Polaris,New,Carolina Aguirre,Polaris
+45,Model recalc at the end of a process,New,Carolina Aguirre,Polaris
+46,Filter List & Time Formatted Line Items,New,John Pitstick,UX
+47,Address model-to-model Import reliability (Need Reference Integrity),Open,John Pitstick,Modeling
+49,"Anaplan Tab in SFDC UX, with SSO",Open,Carolina Aguirre,SFDC_Tab
+50,[Needs to be broken up] UX Framework Improvements​,New,Guillaume Arnaud,UX
+51,"Multiselect, dynamic aggregation and sparse hierarchy navigation - Needed by All Apps",Planned,Carolina Aguirre,UX
+52,Geo Map - Route Lines / Connection Lines,Planned,Carolina Aguirre,UX
+53,[DUPE IZ_56] Navigation - Needed by all Apps,Shelved,Adam Bimson,UX
+54,[Need more input from SCM] Production Scheduling,New,Carolina Aguirre,UX
+55,Help,New,Carolina Aguirre,UX
+56,Enterprise-Grade Navigation Experience - Needed by All Apps,Open,John Pitstick,UX
+57,Org Chart Card: Context Awareness,Planned,John Pitstick,UX
+58,Org Chart Card: Native Filtering,Planned,John Pitstick,UX
+59,[Suspicious BUG] Preserve filter on a list when users pivot in the UX grid view,New,Frankie Wolf,UX
+60,Global management of palettes & styles,Open,Frankie Wolf,UX
+61,UX Pages need to allow for more flexible designs,Planned,Frankie Wolf,UX
+62,Optimizer workflow,Open,Carolina Aguirre,Workflow
+63,Workflow Imbedded in Application Experience - Needed by All Apps,Open,John Pitstick,Workflow
+64,"Hide ""workflow only"" pages from breadcrumb visibility",Open,John Pitstick,UX
+65,DEV / TEST / PRD ADO data sets,Open,Adam Bimson,ADO
+66,Multi-submit workflow (bundle things for approval),Open,John Pitstick,Workflow
+67,Fix performance issue when summing data at a granular level from a large list.,Open,Guillaume Arnaud,Polaris
+68,Summary method for every individual dimension,New,Guillaume Arnaud,Modeling
+73,Native Effective Dating,New,Guillaume Arnaud,Modeling
+74,Improve Performance related to DCA,New,Guillaume Arnaud,Polaris
+75,Enhanced Feedback Running Workflows,Open,John Pitstick,Workflow
+76,Analyst: Ability to do calculations,Open,Lindsay DiPietro,AI
+77,Analyst: User Role specific,Planned,Lindsay DiPietro,AI
+78,Analyst: limit UX Pages,Open,Lindsay DiPietro,AI
+79,Multi dimensional configuration for a sub-process,New,Guillaume Arnaud,PAF
+80,Analyst: Cross-Application Support,Open,John Pitstick,AI
+81,Dynamic Module Generation by Hierarchy Levels (aka top down),New,Guillaume Arnaud,PAF
+82,Support for User-Defined Hierarchy Levels in Sub-Processes,New,Guillaume Arnaud,PAF
+83,Edit / bulk edit of sources where source is an Anaplan model,Open,Adam Bimson,ADO
+84,Content locking,New,Guillaume Arnaud,PAF
+85,"ICM - Data repository for large dense and static data set (1B and more), supporting reporting and Auditing",New,Guillaume Arnaud,BigRocks
+86,"ICM - Data repository for large dense and static data set (1B and more), supporting reporting and Auditing",New,Guillaume Arnaud,BigRocks
+87,ICM - Period Management,New,Guillaume Arnaud,BigRocks
+88,ICM - Data Repository Analytics,New,Carolina Aguirre,BigRocks
+89,ICM - Balance Carry-Forward Mechanism,New,Carolina Aguirre,BigRocks
+90,ICM - Open Period Processing,New,Guillaume Arnaud,BigRocks
+91,Native Dimension Typing for Application Standardization,New,Carolina Aguirre,UDM+PlanningFlows
+92,Conditional Formatting - general enhancements / reduce maintenance,Planned,John Pitstick,UX
+93,Optimizer: On Polaris,Planned,Lindsay DiPietro,AI
+94,Enhanced ADO Support / Integration,Planned,Frankie Wolf,PAF
+95,Overall Hardening,Planned,Frankie Wolf,PAF
+96,Improve Performance of Version and Deployment,New,Frankie Wolf,PAF
+97,Upgradeability for Applications,New,Frankie Wolf,PAF
+98,Ability to deploy the same application to the same customer tenant multiple times​,New,Frankie Wolf,PAF
+99,Ability to support various configurations for security setup,New,Frankie Wolf,PAF
+100,Ability to support tenant level configurations,New,Frankie Wolf,PAF
+101,Ability to deploy all AI tools (Forecaster and Optimizer),New,Frankie Wolf,PAF
+102,Ability to provide reports on deployment activity,New,Frankie Wolf,PAF
+103,Ability to deploy applications to customers via Salesforce automation,New,Frankie Wolf,PAF
+104,Create a builder pipeline for dev/test/prod configurations in PAF,New,Frankie Wolf,PAF
+105,Application Translation,Planned,Frankie Wolf,PAF
+106,Ability to return all configuration inputs to the default,New,Frankie Wolf,PAF
+107,Renaming Configs should handle case sensitivity and plurals,New,Frankie Wolf,PAF
+108,Analyst: Sync Time Issues,Open,Yvonne Lin,AI
+109,Analyst: Dimension Defaults on App Side,New,Yvonne Lin,AI
+110,Optimizer: Concurrent Users,New,Lindsay DiPietro,AI
+111,HCM Interhitance Modeling Capabilities (automate vs manual),New,Carolina Aguirre,UDM+PlanningFlows

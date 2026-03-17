@@ -1,0 +1,63 @@
+idea_id,idea_title,idea_status,owner_id,Requester_Organization
+3,Add functions in Polaris,0,1235,Polaris
+4,Streaming Export between Salesforce and Sales Forecasting Application [ADO],0,1419,App_Enhancements
+5,Standardization of naming convention across applications,0,1419,App_Enhancements
+6,Scripting Engine,0,1419,App_Enhancements
+7,Ability to use “Formula” summary method on ITEM(),0,2017,Polaris
+8,Able to create filters for which orgs should be visible under the org selected in context.,0,2017,Polaris
+9,"As a builder, I must be able to configure the Model Calendar in a model",0,262,PAF
+10,Ability to configure multiple modules with the same hierarchy but separate lists.,0,262,PAF
+11,[Need Confirmation] Name or Code for Standard Lists in ADO,0,756,ADO
+12,SFDC Connector with Writeback and Streaming (Replacement of current connector) - Needed by all Apps,0,2084,ADO
+13,Data Spaces - Needed by All Apps,0,2084,ADO
+14,Bulk repointing of model links - Needed by All Apps,0,2084,ADO
+15,Validations + Data Cleaning & Profiling - Needed by All Apps,0,2084,ADO
+16,User inputs - Needed by All Apps,0,2084,ADO
+17,Grouping of links - Needed by All Apps,0,2084,ADO
+18,Performance for model links/source - Needed by All Apps,0,2084,ADO
+19,ALM / 'repointing' for workflow,0,2084,ADO
+20,Lifecycle management + associated auditing/change control - Needed by All Apps,0,2084,ADO
+21,Improved Error Handling - Needed by All Apps,0,2084,ADO
+22,Usability Improvements - Needed by All Apps,0,2084,ADO
+23,Smarter Data Type Transformation - Needed by All Apps,0,2084,ADO
+24,Bulk deletion of ADO content - Needed by All Apps,0,2084,ADO
+25,Master data management - Needed by All Apps,0,756,ADO
+26,Write back AI Agents,0,2084,AI
+27,AI navigation,0,2084,AI
+28,Analytics / scripting engine,0,2084,AI
+29,Forecaster coefficients,0,2084,AI
+30,Analyst: App Specific Context,0,2084,AI
+31,AI Driven Segmentation: Clustering Algorithms,1,2084,AI
+32,Fluence Architecture for ICM,0,2084,Modeling
+33,Fluence / Polaris Integrations for ICM,0,2084,Modeling
+34,"""General Platform Reqs for ICM (Ignore if Fluence is selected as the ICM calc engine for ICM)""",0,2084,Modeling
+35,Three-way solve,0,2084,Modeling
+36,Statistical calculation functions,0,2084,Modeling
+37,Stochastic modelling,0,2084,Modeling
+38,Content locking,0,2084,Modeling
+39,Being able to use versions as a list format,0,2084,Modeling
+40,Native Dimension Typing for Application Standardization,0,756,Modeling
+41,User-input override on calculated cell (Merge w/ 3 way solve),0,2084,Modeling
+42,Dynamic bulk copy (bug?),0,2084,Modeling
+43,Polaris modeling,0,2084,Polaris
+44,Optimize on Polaris,0,2084,Polaris
+45,Model recalc at the end of a process,0,2084,Polaris
+46,Filter List & Time Formatted Line Items,0,2084,Polaris
+47,Address model-to-model Import reliability (Bug? - Need Reference Integrity),0,1235,Polaris
+48,HCM Interhitance Modeling Capabilities (automate vs manual),0,2084,Polaris
+49,"Anaplan Tab in SFDC UX, with SSO",0,2084,SFDC_Tab
+50,UX Framework Improvements​ - Needed by All Apps,0,2084,UX
+51,"Multiselect, dynamic aggregation and sparse hierarchy navigation - Needed by All Apps",0,2084,UX
+52,Network mapping,0,2084,UX
+53,Navigation - Needed by all Apps,0,2084,UX
+54,Production Scheduling,0,2084,UX
+55,Help,0,2084,UX
+56,Enterprise-Grade Navigation Experience - Needed by All Apps,1,2084,UX
+57,Org Chart Card: Context Awareness,0,2084,UX
+58,Org Chart Card: Native Filtering,1,2084,UX
+59,[Suspicious BUG] Preserve filter on a list when users pivot in the UX grid view,1,2084,UX
+60,"Global palettes & styles (Automated vs manual, application builder) - Needed by All Apps",0,756,UX
+61,More blocks in the grid on the ux pages - Needed by All Apps,1,756,UX
+62,Optimizer workflow,0,2084,Workflow
+63,Workflow Imbedded in Application Experience - Needed by All Apps,0,2084,Workflow
+64,"Hide ""workflow only"" pages from breadcrumb visibility",1,1235,UX

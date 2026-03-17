@@ -1,0 +1,21 @@
+initiative_id,initiative_title,initiative_state,owner_id,release_ids,epic_id
+292,Assortment Planning 1.0,2,1609,"[50, 51, 52, 53, 54]","[7573, 7574, 7608, 8816, 8817, 8818, 8819, 8820, 8821, 8822, 8823, 9637, 9650, 9651, 9652, 9653, 10828, 10830, 10831, 10832]"
+367,Trade Promotion Management 1.0,3,1306,"[51, 52, 53, 54]","[8796, 8797, 8799, 8800, 8801, 8802, 8803, 9200, 9201, 9202, 9203, 9204, 9205, 9618, 9623, 9624, 9629, 9633, 9635, 9636, 9683, 10642]"
+369,Allocation and Replenishment Planning 1.0,2,1306,"[52, 53, 54, 55]","[9644, 9645, 9646, 9647, 9648, 9649, 10817, 10818, 10820, 10821]"
+445,Platform Adoption 2025-26  - Investiagtion in to new capabilities and adoption planning,2,1306,"[54, 55, 56, 57]","[9226, 9800, 9801, 9802, 9803, 9804]"
+462,Continuous Improvement of SCM Apps,3,1331,"[52, 53, 54, 55, 56, 57]",[9805]
+598,Stat v6,2,1306,[54],"[10654, 10731]"
+599,Demand Planning v6,2,1306,[54],"[10725, 10732, 10959]"
+600,Internal team process improvements and BAU,2,1306,"[54, 55, 56, 57]",[10890]
+601,Inventory Planning v6,2,1306,[54],"[10726, 10733, 10958]"
+602,Partner Tarrif Model,1,1306,"[54, 55, 56, 57]",[10751]
+603,Supply Planning v6,2,1306,[54],"[10727, 10734]"
+605,PO Management v1,1,1306,[55],[]
+606,IBP v2,2,1306,[54],"[10728, 10735]"
+607,Spend Analysis and Forecasting v2,1,1306,"[55, 56, 57]",[]
+608,RCCP v6,2,1306,[54],"[10730, 10737]"
+610,Spend Analysis and Forecasting v1,2,1306,[54],"[10729, 10736]"
+652,MFP V2,2,1609,"[53, 54]","[10759, 10761, 10762, 10766]"
+683,TPM 1.1 - Recommended Promotions,1,2042,"[54, 55]",[10796]
+684,TPM 2.0,1,2042,"[54, 55]","[10797, 10798, 10799]"
+685,Size Optimization 1.0,2,1609,"[54, 55]","[10050, 10051, 10052, 10053]"

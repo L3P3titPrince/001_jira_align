@@ -1,0 +1,90 @@
+epic_id,epic_title,epic_state,initiative_id,release_id
+7573,AP_v1 Discovery,0,292,
+7574,AP_v1 Model Setup,0,292,
+7608,Assortment_v1 Technical Feasibilty & Framework,3,292,51.0
+8796,TPM - Hierarchies,5,367,52.0
+8797,TPM - Data,5,367,52.0
+8799,TPM - Create & Scenario Plan Promotions,5,367,52.0
+8800,TPM - Tactics and Guardrail Management,5,367,52.0
+8801,TPM - Mechanic Management,5,367,52.0
+8802,TPM - P&L Configuration and Reporting,5,367,52.0
+8803,TPM - Review / Approve Promotion Calendar,5,367,52.0
+8816,AP - Hierarchies,2,292,52.0
+8817,AP - Data,2,292,52.0
+8818,AP - Store Clustering,2,292,52.0
+8819,AP - Product Creation / Selection,1,292,52.0
+8820,AP - Ladder Plan Creation,1,292,52.0
+8821,AP - Assortment Planning,2,292,52.0
+8822,AP - Assortment Hind Sighting & Strategy,2,292,52.0
+8823,AP - SKU Rationalization,1,292,52.0
+9200,TPM - CheckBook Management,5,367,52.0
+9201,TPM - Price List Management,5,367,52.0
+9202,TPM - Draft Promotion Calendar,5,367,52.0
+9203,TPM - Campaign Management,5,367,52.0
+9204,TPM - CPG Management,5,367,52.0
+9205,TPM - Execute Promotion Calendar,5,367,52.0
+9226,Model Documentation - Updates,0,445,53.0
+9618,TPM - Execute Promotion Calendar - Q4,5,367,53.0
+9623,TPM - Checkbook Management - Q4,5,367,53.0
+9624,TPM - Review / Approve Promo Calendar - Q4,5,367,53.0
+9629,TPM - Data Loads - Q4,5,367,53.0
+9633,TPM - Promo Curve Management - Q4,5,367,53.0
+9635,TPM - Demand Model - Q4,5,367,53.0
+9636,TPM - Create & Scenario Plan Promotions - Q4,5,367,53.0
+9637,AP - Assortment Hind Sighting & Strategy (Q4),2,292,53.0
+9644,AR - Demand Forecast Creation & Consumption (Q4),5,369,53.0
+9645,AR - Inputs (Q4),0,369,53.0
+9646,AR - Initial Allocation (Q4),0,369,53.0
+9647,"AR - Replenishment Triggers, Constraints & Policies (Q4)",5,369,53.0
+9648,AR - UI Paramater Management (Q4),0,369,53.0
+9649,AR - Exception Management & Resolution (Q4),0,369,53.0
+9650,AP - Assortment Planning (Q4),2,292,53.0
+9651,AP - Store Clustering (Q4),2,292,53.0
+9652,AP - Data (Q4),1,292,53.0
+9653,AP - Assortment Review (Q4),1,292,53.0
+9683,TPM - Configurable P&L - Q4,5,367,53.0
+9800,Scheduling Partnership - Siemens,0,445,53.0
+9801,Unified Data Model Support,0,445,53.0
+9802,Alignment of BOM Structures,0,445,53.0
+9803,Inventory Agent,0,445,53.0
+9804,Investigate CoModller Feasibility,0,445,53.0
+9805,Existing Apps (DASP) backlog for 5.2,5,462,53.0
+10050,Sizing - Data (Q1),1,685,54.0
+10051,Sizing - Syrup Size Profile Management (Q1),1,685,54.0
+10052,Sizing - Core Calculation Engine (Q1),1,685,54.0
+10053,Sizing - User Interface & Workflow (Q1),1,685,54.0
+10642,Trade Promotion Management (TPM) application,5,367,54.0
+10654,[ADO and IBA] Adoption of ADO Stat v6 (Q1),0,598,54.0
+10725,[ADO and IBA] Adoption of ADO Demand Planning v6 (Q1),2,599,54.0
+10726,[ADO and IBA] Adoption of ADO Inventory Planning v6 (Q1),0,601,54.0
+10727,[ADO and IBA] Adoption of ADO Supply Planning v6 (Q1),2,603,54.0
+10728,[ADO and IBA] Adoption of ADO IBP v2 (Q1),0,606,54.0
+10729,[ADO and IBA] Adoption of ADO Spend Analysis and Forecasting v1 (Q1),0,610,54.0
+10730,[ADO and IBA] Adoption of ADO RCCP v2 (Q1),0,608,54.0
+10731,[PAF Adop/Config] Adoption of PAF Stat v6 (Q1),2,598,54.0
+10732,[PAF Adop/Config] Adoption of PAF Demand Planning v6 (Q1),2,599,54.0
+10733,[PAF Adop/Config] Adoption of PAF Inventory Planning v6 (Q1),0,601,54.0
+10734,[PAF Adop/Config] Adoption of PAF Supply Planning v6 (Q1),2,603,54.0
+10735,[PAF Adop/Config] Adoption of PAF IBP v2 (Q1),0,606,54.0
+10736,[PAF Adop/Config] Adoption of PAF Spend Analysis and Forecasting v1 (Q1),2,610,54.0
+10737,[PAF Adop/Config] Adoption of PAF RCCP v6(Q1),2,608,54.0
+10751,[BAU / Other] Partner Tarrif Model - EPICS TBC (Q1),0,602,54.0
+10759,MFP_v2 Long Range Plan (Q1),2,652,54.0
+10761,MFP_v2 PAF (Q1),2,652,54.0
+10762,MFP_v2 CoPlanner (Q1),2,652,54.0
+10766,MFP_v2 Bug Fixes (Q1),2,652,54.0
+10796,TPM - Promotion Recommendations,0,683,54.0
+10797,TPM - Price Setting - Q1,0,684,54.0
+10798,TPM - Price Execution - Q1,0,684,54.0
+10799,TPM - POS Data Integration - Q1,0,684,54.0
+10817,1.0 AR App: Forecast Review,2,369,54.0
+10818,1.0 AR App: Export Management,2,369,54.0
+10820,1.0 AR App: Configuration Management,2,369,54.0
+10821,1.0 AR App: Recommendation Edits,2,369,54.0
+10828,AP - Assortment Review (Q1),2,292,54.0
+10830,AP - Assortment Hind Sighting & Strategy (Q1),2,292,54.0
+10831,AP - Assortment Planning (Q1),2,292,54.0
+10832,AP - Data (Q1),2,292,54.0
+10890,[BAU / Other] Documentation and Demo Data 2026 Q1,2,600,54.0
+10958,[BAU / Other] INV : Bug Fixes v6,0,601,54.0
+10959,[BAU / Other] DPL : Bug Fixes v6,2,599,54.0

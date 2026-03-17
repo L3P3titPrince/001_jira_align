@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jira Align Extractor</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 2em;
+            background-color: #f4f7f6;
+            color: #333;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2em;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #0052cc;
+        }
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+        label {
+            display: block;
+            margin-bottom: 0.5em;
+            font-weight: bold;
+        }
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        button {
+            background-color: #0052cc;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+        button:hover {
+            background-color: #0065ff;
+        }
+        #status {
+            margin-top: 1em;
+            font-style: italic;
+        }
+        #results {
+            margin-top: 2em;
+            padding: 1em;
+            background-color: #e9ecef;
+            border-radius: 4px;
+            white-space: pre-wrap; /* Allows text to wrap */
+            word-wrap: break-word; /* Breaks long words */
+            max-height: 500px;
+            overflow-y: auto;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>Jira Align Epic Extractor</h1>
+        
+        <div class="form-group">
+            <label for="programs">Program IDs</label>
+            <label for="Hint">Supply Chain = 72/n Finance = 71, Workforce = 79, Sales = 70</label>
+            <input type="text" id="programs" placeholder="e.g., 72, 79">
+        </div>
+
+        <div class="form-group">
+            <label for="releases">Release IDs (Quarters/PIs)</label>
+            <label for="Hint">2021Q1 = 54, 2021Q2 = 55, 2021Q3 = 56, 2021Q4 = 57</label>
+            <input type="text" id="releases" placeholder="e.g., 54, 55">
+        </div>
+
+        <button onclick="extractData()">Extract Epics</button>
+
+        <p id="status"></p>
+
+        <pre id="results"></pre>
+    </div>
+
+    <script>
+        // This JavaScript function runs when the button is clicked
+        async function extractData() {
+            // Get the HTML elements
+            const statusEl = document.getElementById('status');
+            const resultsEl = document.getElementById('results');
+            
+            // Clear previous results and show a loading message
+            statusEl.textContent = 'Loading...';
+            resultsEl.textContent = '';
+
+            // 1. Get the raw input values from the text boxes
+            const programInput = document.getElementById('programs').value;
+            const releaseInput = document.getElementById('releases').value;
+
+            // Simple validation
+            if (!programInput || !releaseInput) {
+                statusEl.textContent = 'Error: Both Program and Release IDs are required.';
+                return;
+            }
+
+            // 2. Process the input strings into arrays of numbers
+            // Takes "72, 79" -> [72, 79]
+            const programIds = programInput.split(',').map(item => item.trim()).map(Number);
+            const releaseIds = releaseInput.split(',').map(item => item.trim()).map(Number);
+
+            // 3. Construct the JSON body for the POST request
+            const requestBody = {
+                programs: programIds,
+                releases: releaseIds
+            };
+
+            // 4. Send the POST request to your running Flask app
+            try {
+                const response = await fetch('http://127.0.0.1:5000/extract', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(requestBody),
+                });
+
+                if (!response.ok) {
+                    // Handle HTTP errors like 400 or 500
+                    const errorData = await response.json();
+                    throw new Error(errorData.error || `HTTP error! Status: ${response.status}`);
+                }
+
+                // Get the JSON data from the response
+                const data = await response.json();
+
+                // 5. Display the results in a formatted way
+                resultsEl.textContent = JSON.stringify(data, null, 2); // Pretty-print JSON
+                statusEl.textContent = `Success! Found ${data.length} records.`;
+
+            } catch (error) {
+                // Display any errors that occurred during the fetch
+                statusEl.textContent = `Error: ${error.message}`;
+                console.error('Fetch error:', error);
+            }
+        }
+    </script>
+
+</body>
+</html>
