@@ -1,0 +1,22 @@
+# Virtual environment
+venv/
+
+# OS files
+.DS_Store
+
+# IDE / editor
+.vscodeignore
+
+# Excel temp files
+~$*.xlsx
+~$*.xls
+
+# Python
+__pycache__/
+*.pyc
+
+# Credentials (never commit)
+src/config.py
+
+# Generated outputs
+output/
