@@ -3,6 +3,7 @@
 # This script is now correctly configured to read the header row
 # in 'idea_status_mapping.csv'.
 
+import re
 import pandas as pd
 from pathlib import Path
 import sys
@@ -47,6 +48,45 @@ def load_status_mapping(filename: str) -> dict:
     except Exception as e:
         print(f"--- FATAL ERROR while loading status mapping: {e} ---")
         sys.exit(1)
+
+def get_requester_org_from_auditlog(idea_id: int) -> str:
+    """
+    Fetches the audit log for a single idea and parses the 'Requestor Org'
+    value from the creation entry's HTML details field.
+
+    Returns the org name string, or an empty string if not found.
+    """
+    import requests
+    import config
+
+    url = config.JIRA_ALIGN_URL.rstrip('/') + f"/rest/align/api/2/ideas/{idea_id}/auditlog"
+    headers = {"Authorization": f"Bearer {config.API_TOKEN}"}
+
+    try:
+        response = requests.get(url, headers=headers)
+        response.raise_for_status()
+        entries = response.json()
+    except Exception as e:
+        print(f"    WARNING: Could not fetch auditlog for idea {idea_id}: {e}")
+        return ""
+
+    # The creation entry contains all fields set at creation time.
+    # It is the earliest entry where the details contain "Izone created".
+    creation_entries = [e for e in entries if "Izone created" in e.get("details", "")]
+    if not creation_entries:
+        return ""
+
+    # Sort ascending by timestamp and take the first (original creation)
+    creation_entries.sort(key=lambda e: e.get("auditTimeStamp", ""))
+    details_html = creation_entries[0]["details"]
+
+    # Parse: <font class="fields">Requestor Org</font>: <font  class="values">VALUE</font>
+    match = re.search(
+        r'<font class="fields">Requestor Org</font>:\s*<font[^>]*class="values"[^>]*>([^<]+)</font>',
+        details_html
+    )
+    return match.group(1).strip() if match else ""
+
 
 def load_group_mapping(filename: str) -> dict:
     """
@@ -130,17 +170,28 @@ def extract_and_save_ideas():
         df['ownerId'] = df['ownerId'].map(user_map).fillna(df['ownerId'])
         print("--- Successfully mapped Owner IDs to Full Names. ---")
 
-    # === 4. RENAME COLUMNS FOR FINAL OUTPUT ===
+    # === 4. FETCH REQUESTER ORG FROM AUDIT LOG ===
+    print("\n--- Fetching 'Requester Org' from idea audit logs... ---")
+    requester_orgs = []
+    for idea_id in df['id']:
+        org = get_requester_org_from_auditlog(int(idea_id))
+        print(f"    Idea {idea_id}: '{org}'")
+        requester_orgs.append(org)
+    df['requester_org'] = requester_orgs
+    print("--- Requester Org extraction complete. ---")
+
+    # === 5. RENAME COLUMNS FOR FINAL OUTPUT ===
     column_map = {
         'id': 'idea_id',
         'title': 'idea_title',
         'status': 'idea_status',
         'ownerId': 'owner_name',
-        'groupId': 'requester_organization'
+        'groupId': 'requester_organization',
+        'requester_org': 'Requester Org',
     }
     df.rename(columns=column_map, inplace=True)
 
-    # === 5. SAVE THE FINAL, FULLY ENRICHED DATA ===
+    # === 6. SAVE THE FINAL, FULLY ENRICHED DATA ===
     output_filename = project_root / 'data' / "all_ideas.csv"
     data_processor.save_to_csv(df, output_filename)
 
